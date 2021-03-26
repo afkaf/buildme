@@ -52,13 +52,14 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
   const uniPrice = useUSDCPrice(uni)
   const blockTimestamp = useCurrentBlockTimestamp()
   const unclaimedUni = useTokenBalance(useMerkleDistributorContract()?.address, uni)
-  const circulation: TokenAmount | undefined = useMemo(
-    () =>
-      blockTimestamp && uni && chainId === ChainId.MAINNET
-        ? computeUniCirculation(uni, blockTimestamp, unclaimedUni)
-        : totalSupply,
-    [blockTimestamp, chainId, totalSupply, unclaimedUni, uni]
-  )
+  // XXXXX
+  // const circulation: TokenAmount | undefined = useMemo(
+  //   () =>
+  //     blockTimestamp && uni && chainId === ChainId.MAINNET
+  //       ? computeUniCirculation(uni, blockTimestamp, unclaimedUni)
+  //       : totalSupply,
+  //   [blockTimestamp, chainId, totalSupply, unclaimedUni, uni]
+  // )
 
   return (
     <ContentWrapper gap="lg">
@@ -114,11 +115,11 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
               <TYPE.white color="white">Total Supply</TYPE.white>
               <TYPE.white color="white">{totalSupply?.toFixed(0, { groupSeparator: ',' })}</TYPE.white>
             </RowBetween>
-            {uni && uni.chainId === ChainId.MAINNET ? (
+            {/* XXXXX {uni && uni.chainId === ChainId.MAINNET ? (
               <ExternalLink href={`https://analytics.sushi.com/tokens/${uni.address}`}>
                 View BAMBOO Analytics
               </ExternalLink>
-            ) : null}
+            ) : null} */}
           </AutoColumn>
         </CardSection>
       </ModalUpper>

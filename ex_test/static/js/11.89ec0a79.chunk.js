@@ -1,1 +1,0 @@
-(this["webpackJsonp@pandaswap/interface"]=this["webpackJsonp@pandaswap/interface"]||[]).push([[11],{1410:function(a,p){}}]);

@@ -38,13 +38,13 @@ var _FACTORY_ADDRESS, _ROUTER_ADDRESS, _BAMBOO_ADDRESS, _MASTERCHEF_ADDRESS, _BA
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var INIT_CODE_HASH = '0x90878ec30ff4b1070614fd650529c76a3ab5fc572ca573f535951faa7a093c32';
-var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[exports.ChainId.MAINNET] = '', _FACTORY_ADDRESS[exports.ChainId.ROPSTEN] = '', _FACTORY_ADDRESS[exports.ChainId.FUJI] = '0xaedA27dc4968010AB5C31E33E39387d5F9ff0D26', _FACTORY_ADDRESS);
-var ROUTER_ADDRESS = (_ROUTER_ADDRESS = {}, _ROUTER_ADDRESS[exports.ChainId.MAINNET] = '', _ROUTER_ADDRESS[exports.ChainId.ROPSTEN] = '', _ROUTER_ADDRESS[exports.ChainId.FUJI] = '0x943b03627b3294EaF4C9D94B51B0f0c920726998', _ROUTER_ADDRESS);
-var BAMBOO_ADDRESS = (_BAMBOO_ADDRESS = {}, _BAMBOO_ADDRESS[exports.ChainId.MAINNET] = '', _BAMBOO_ADDRESS[exports.ChainId.ROPSTEN] = '', _BAMBOO_ADDRESS[exports.ChainId.FUJI] = '0x31B3CC52e7A3AAD2DaB91dC090D67818c6f7f30F', _BAMBOO_ADDRESS);
-var MASTERCHEF_ADDRESS = (_MASTERCHEF_ADDRESS = {}, _MASTERCHEF_ADDRESS[exports.ChainId.MAINNET] = '', _MASTERCHEF_ADDRESS[exports.ChainId.ROPSTEN] = '', _MASTERCHEF_ADDRESS[exports.ChainId.FUJI] = '0x82035bC757D8414852770A28E42b70e520816233', _MASTERCHEF_ADDRESS);
-var BAR_ADDRESS = (_BAR_ADDRESS = {}, _BAR_ADDRESS[exports.ChainId.MAINNET] = '', _BAR_ADDRESS[exports.ChainId.ROPSTEN] = '', _BAR_ADDRESS[exports.ChainId.FUJI] = '0x1614242b880A4f7d40ca05CCD1341841aF699C8c', _BAR_ADDRESS);
-var MAKER_ADDRESS = (_MAKER_ADDRESS = {}, _MAKER_ADDRESS[exports.ChainId.MAINNET] = '', _MAKER_ADDRESS[exports.ChainId.ROPSTEN] = '', _MAKER_ADDRESS[exports.ChainId.FUJI] = '0xc8028b7CBF798B4c5C8f815f22e0C57A261822e4', _MAKER_ADDRESS);
+var INIT_CODE_HASH = '0x4cb0cec1069a6234ccf58252397d8035508b0e46737b3c79735a3420330460e4';
+var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[exports.ChainId.MAINNET] = '', _FACTORY_ADDRESS[exports.ChainId.ROPSTEN] = '', _FACTORY_ADDRESS[exports.ChainId.FUJI] = '0xaedA27dc4968010AB5C31E33E39387d5F9ff0D26', _FACTORY_ADDRESS[exports.ChainId.AVALANCHE] = '0xc7e37A28bB17EdB59E99d5485Dc8c51BC87aE699', _FACTORY_ADDRESS);
+var ROUTER_ADDRESS = (_ROUTER_ADDRESS = {}, _ROUTER_ADDRESS[exports.ChainId.MAINNET] = '', _ROUTER_ADDRESS[exports.ChainId.ROPSTEN] = '', _ROUTER_ADDRESS[exports.ChainId.FUJI] = '0x943b03627b3294EaF4C9D94B51B0f0c920726998', _ROUTER_ADDRESS[exports.ChainId.AVALANCHE] = '0x67c58C8f01f50589A52C2C0b233Db9aF6A66a0F0', _ROUTER_ADDRESS);
+var BAMBOO_ADDRESS = (_BAMBOO_ADDRESS = {}, _BAMBOO_ADDRESS[exports.ChainId.MAINNET] = '', _BAMBOO_ADDRESS[exports.ChainId.ROPSTEN] = '', _BAMBOO_ADDRESS[exports.ChainId.FUJI] = '0x31B3CC52e7A3AAD2DaB91dC090D67818c6f7f30F', _BAMBOO_ADDRESS[exports.ChainId.AVALANCHE] = '0xef4988cbe89316fa12650DcC036bE2B242895306', _BAMBOO_ADDRESS);
+var MASTERCHEF_ADDRESS = (_MASTERCHEF_ADDRESS = {}, _MASTERCHEF_ADDRESS[exports.ChainId.MAINNET] = '', _MASTERCHEF_ADDRESS[exports.ChainId.ROPSTEN] = '', _MASTERCHEF_ADDRESS[exports.ChainId.FUJI] = '0x82035bC757D8414852770A28E42b70e520816233', _MASTERCHEF_ADDRESS[exports.ChainId.AVALANCHE] = '0xB5aa594A2DdcBA8AF3EfaFa559C6d73085E80Cd1', _MASTERCHEF_ADDRESS);
+var BAR_ADDRESS = (_BAR_ADDRESS = {}, _BAR_ADDRESS[exports.ChainId.MAINNET] = '', _BAR_ADDRESS[exports.ChainId.ROPSTEN] = '', _BAR_ADDRESS[exports.ChainId.FUJI] = '0x1614242b880A4f7d40ca05CCD1341841aF699C8c', _BAR_ADDRESS[exports.ChainId.AVALANCHE] = '0xD8C779bD35925fa00ed6c9465964b01686351Aa4', _BAR_ADDRESS);
+var MAKER_ADDRESS = (_MAKER_ADDRESS = {}, _MAKER_ADDRESS[exports.ChainId.MAINNET] = '', _MAKER_ADDRESS[exports.ChainId.ROPSTEN] = '', _MAKER_ADDRESS[exports.ChainId.FUJI] = '0xc8028b7CBF798B4c5C8f815f22e0C57A261822e4', _MAKER_ADDRESS[exports.ChainId.AVALANCHE] = '0x63E5c33e22A4669BF1E21728554Ac1299c650c49', _MAKER_ADDRESS);
 var TIMELOCK_ADDRESS = (_TIMELOCK_ADDRESS = {}, _TIMELOCK_ADDRESS[exports.ChainId.MAINNET] = '', _TIMELOCK_ADDRESS[exports.ChainId.ROPSTEN] = '', _TIMELOCK_ADDRESS[exports.ChainId.FUJI] = '', _TIMELOCK_ADDRESS);
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
@@ -431,7 +431,7 @@ var Currency = /*#__PURE__*/function () {
 }();
 Currency.ETHER = /*#__PURE__*/new Currency(18, 'ETH', 'Ether');
 Currency.AVAX = /*#__PURE__*/new Currency(18, 'AVAX', 'Avalanche');
-Currency.NATIVE = (_Currency$NATIVE = {}, _Currency$NATIVE[exports.ChainId.MAINNET] = Currency.AVAX, _Currency$NATIVE[exports.ChainId.ROPSTEN] = Currency.ETHER, _Currency$NATIVE[exports.ChainId.FUJI] = Currency.AVAX, _Currency$NATIVE);
+Currency.NATIVE = (_Currency$NATIVE = {}, _Currency$NATIVE[exports.ChainId.MAINNET] = Currency.AVAX, _Currency$NATIVE[exports.ChainId.ROPSTEN] = Currency.ETHER, _Currency$NATIVE[exports.ChainId.FUJI] = Currency.AVAX, _Currency$NATIVE[exports.ChainId.AVALANCHE] = Currency.AVAX, _Currency$NATIVE);
 var ETHER = Currency.ETHER;
 
 var _WETH;
@@ -499,7 +499,7 @@ function currencyEquals(currencyA, currencyB) {
 } // In reality this is a map of the wrapped version of the native token for a given network.
 // TODO: Rename to WNATIVE for sanity
 
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'), _WETH[exports.ChainId.ROPSTEN] = /*#__PURE__*/new Token(exports.ChainId.ROPSTEN, '0x2a7324828E189Fb01e63f2fcF43F82370eE8487a', 18, 'WETH', 'Wrapped Ether'), _WETH[exports.ChainId.FUJI] = /*#__PURE__*/new Token(exports.ChainId.FUJI, '0x1D308089a2D1Ced3f1Ce36B1FcaF815b07217be3', 18, 'WAVAX', 'Wrapped Avax'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'), _WETH[exports.ChainId.ROPSTEN] = /*#__PURE__*/new Token(exports.ChainId.ROPSTEN, '0x2a7324828E189Fb01e63f2fcF43F82370eE8487a', 18, 'WETH', 'Wrapped Ether'), _WETH[exports.ChainId.FUJI] = /*#__PURE__*/new Token(exports.ChainId.FUJI, '0x1D308089a2D1Ced3f1Ce36B1FcaF815b07217be3', 18, 'WAVAX', 'Wrapped Avax'), _WETH[exports.ChainId.AVALANCHE] = /*#__PURE__*/new Token(exports.ChainId.AVALANCHE, '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7', 18, 'WAVAX', 'Wrapped Avax'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);

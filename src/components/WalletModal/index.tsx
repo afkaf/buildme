@@ -352,8 +352,8 @@ export default function WalletModal({
           )}
           {walletView !== WALLET_VIEWS.PENDING && (
             <Blurb>
-              <span>New to Ethereum? &nbsp;</span>{' '}
-              <ExternalLink href="https://ethereum.org/wallets/">Learn more about wallets</ExternalLink>
+              <span>New to Avalanche? &nbsp;</span>{' '}
+              <ExternalLink href="https://support.avalabs.org/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche">Learn more about Avalanche and MetaMask</ExternalLink>
             </Blurb>
           )}
         </ContentWrapper>

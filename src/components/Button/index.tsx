@@ -47,18 +47,18 @@ const sheen = keyframes`{
 export const ButtonPrimary = styled(Base)`
   /* background-color: ${({ theme }) => theme.primary1}; */
   overflow:hidden;
-  background: linear-gradient(to right, #0094ec , #f537c3);
+  background: linear-gradient(to right, #084 , #011);
   background-origin: border-box;
   color: white;
   &:focus {
     box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.05, theme.primary1)};
     /*background: ${({ theme }) => darken(0.05, theme.primary1)};*/
-    background: linear-gradient(to right, #0094ec , #f537c3);
+    background: linear-gradient(to right, #084 , #011);
   }
   &:active {
     box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.1, theme.primary1)};
     /*background: ${({ theme }) => darken(0.1, theme.primary1)};*/
-    background: linear-gradient(to right, #0094ec , #f537c3);
+    background: linear-gradient(to right, #084 , #011);
   }
   &:disabled {
     pointer-events: none;
@@ -74,7 +74,7 @@ export const ButtonPrimary = styled(Base)`
   }
   &:hover {
     /*background: ${({ theme }) => darken(0.05, theme.primary1)};*/
-    background: linear-gradient(to right, #0094ec , #f537c3);
+    background: linear-gradient(to right, #084 , #011);
     background-origin: border-box;
     &::after {
       animation: ${sheen} 0.5s forwards;

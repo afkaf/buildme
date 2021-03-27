@@ -29,8 +29,6 @@ export function getNetworkLibrary(): Web3Provider {
 
 export const injected = new InjectedConnector({
   supportedChainIds: [
-    1, // mainnet
-    3, // ropsten
     43114, // avalanche
     43113 // fuji
   ]

@@ -47,6 +47,13 @@ export const BAMBOO: ChainTokenMap = {
     'BAMBOO',
     'BambooToken'
   ),
+  [ChainId.AVALANCHE]: new Token(
+    ChainId.AVALANCHE,
+    '0xef4988cbe89316fa12650DcC036bE2B242895306',
+    18,
+    'BAMBOO',
+    'BambooToken'
+  ),
 }
 
 export const COMMON_CONTRACT_NAMES: { [address: string]: string } = {

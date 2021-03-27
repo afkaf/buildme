@@ -148,7 +148,7 @@ export default function CurrencyInputPanel({
   const { allowance, approve, enter } = useBambooBar()
   console.log('sushibar_allowance:', allowance)
 
-  const sushiBalanceBigInt = useTokenBalance('0x31B3CC52e7A3AAD2DaB91dC090D67818c6f7f30F')
+  const sushiBalanceBigInt = useTokenBalance('0xef4988cbe89316fa12650DcC036bE2B242895306')
   const sushiBalance = formatFromBalance(sushiBalanceBigInt?.value, sushiBalanceBigInt?.decimals)
   const decimals = sushiBalanceBigInt?.decimals
 

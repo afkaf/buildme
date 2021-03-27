@@ -99,7 +99,6 @@ export default function App() {
           <Popups />
           <Polling />
           <TopLevelModals />
-          <ComingSoonModal />
           <Web3ReactManager>
             <Switch>
               {/* Tools */}

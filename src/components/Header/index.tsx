@@ -148,7 +148,7 @@ const UNIAmount = styled(AccountElement)`
   height: 36px;
   font-weight: 500;
   background-color: ${({ theme }) => theme.bg3};
-  background: radial-gradient(174.47% 188.91% at 1.84% 0%, #f537c3 0%, #00abff 100%), #edeef2;
+  background: radial-gradient(174.47% 188.91% at 1.84% 0%, #084 0%, #011 100%), #edeef2;
 `
 
 const UNIWrapper = styled.span`
@@ -384,11 +384,11 @@ export default function Header() {
               Stake
             </StyledNavLink>
           )}
-          {chainId && (
+          {/* {chainId && (
             <StyledExternalLink id={`analytics-nav-link`} href={'https://analytics.sushi.com'}>
               Analytics <span style={{ fontSize: '11px' }}>↗</span>
             </StyledExternalLink>
-          )}
+          )} */}
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
